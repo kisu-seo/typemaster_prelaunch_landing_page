@@ -11,19 +11,40 @@
     --color-5: #e8eff2;
     --color-6: #ffffff;
 
-    /* Font Sizes */
-    --fs-56: 3.5rem;
-    --fs-32: 2rem;
-    --fs-24: 1.5rem;
-    --fs-16: 1rem;
-
-    /* Line Heights */
-    --lh-56: 56px;
-    --lh-36: 36px;
-    --lh-28: 28px;
-    --lh-26: 26px;
-
     /* Font Weights */
     --fw-black: 900;
+    --fw-bold: 700;
     --fw-medium: 500;
+}
+
+@media screen and (min-width: 1440px) {
+    :root {
+        /* Font Sizes */
+        --fs-1: 3.5rem;
+        --fs-2: 2rem;
+        --fs-3: 1.5rem;
+        --fs-body: 1rem;
+
+        /* Line Heights */
+        --lh-1: 56px;
+        --lh-2: 36px;
+        --lh-3: 28px;
+        --lh-body: 26px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1339px) {
+    :root {
+        /* Font Sizes */
+        --fs-1: 3rem;
+        --fs-2: 2rem;
+        --fs-3: 1.5rem;
+        --fs-body: 1rem;
+
+        /* Line Heights */
+        --lh-1: 48px;
+        --lh-2: 36px;
+        --lh-3: 28px;
+        --lh-body: 26px;
+    }
 }

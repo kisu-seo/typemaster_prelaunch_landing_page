@@ -1,10 +1,106 @@
-body {
-    font-family: var(--font-family);
+html {
     font-size: 16px;
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+}
+
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    width: 375px;
+    width: calc(375/16 * 1rem);
     margin: 0 auto;
+}
+
+.h1 {
+    font-size: var(--fs-1);
+    line-height: var(--lh-1);
+    font-weight: var(--fw-black);
+    text-transform: uppercase;
+    color: var(--color-3);
+}
+
+.h2 {
+    font-size: var(--fs-2);
+    line-height: var(--lh-2);
+    font-weight: var(--fw-black);
+    text-transform: uppercase;
+}
+
+.h3 {
+    font-size: var(--fs-3);
+    line-height: var(--lh-3);
+    font-weight: var(--fw-black);
+    text-transform: uppercase;
+}
+
+.body {
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    font-weight: var(--fw-medium);
+    color: var(--color-4);
+}
+
+.btn {
+    width: calc(150/16 * 1rem);
+    height: calc(48/16 * 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: calc(8/16 * 1rem);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-body);
+    text-transform: uppercase;
+}
+
+.header {
+    margin-bottom: calc(24/16 * 1rem);
+    position: relative;
+    overflow: hidden;
+}
+
+.nav {
+    width: calc(327/16 * 1rem);
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto calc(64/16 * 1rem);
+}
+
+.nav a {
+    background-color: var(--color-5);
+    color: var(--color-3);
+}
+
+.header__title,
+.header__description {
+    margin-bottom: calc(32/16 * 1rem);
+}
+
+.header__text-container {
+    width: calc(327/16 * 1rem);
+    height: auto;
+    margin: 0 auto calc(64/16 * 1rem);
+}
+
+.header__order-container {
+    width: calc(310/16 * 1rem);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order__link {
+    background-color: var(--color-1);
+    color: var(--color-6);
+}
+
+.header__order-container p {
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
 }
