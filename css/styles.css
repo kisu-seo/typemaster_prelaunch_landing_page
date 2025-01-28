@@ -353,6 +353,10 @@ body {
         margin: 0;
     }
 
+    .grid-img {
+        margin-bottom: calc(40/16 * 1rem);
+    }
+
     .grid-one__title,
     .grid-two__title,
     .grid-three__title,
@@ -365,5 +369,159 @@ body {
     .grid-three__description,
     .grid-four__description {
         text-align: left;
+    }
+
+    .footer {
+        margin-bottom: calc(43/16 * 1rem);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        width: calc(1440/16 * 1rem);
+    }
+
+    .nav {
+        width: calc(1110/16 * 1rem);
+        margin: calc(55/16 * 1rem) auto calc(83/16 * 1rem);
+    }
+
+    .header {
+        margin-bottom: calc(30/16 * 1rem);
+    }
+
+    .header__container {
+        width: calc(1110/16 * 1rem);
+        height: calc(480/16 * 1rem);
+        margin: 0 auto;
+    }
+
+    .header__text-container {
+        width: calc(445/16 * 1rem);
+    }
+
+    .header__title {
+        margin-bottom: calc(24/16 * 1rem);
+    }
+
+    .header__description {
+        font-size: calc(18/16 * 1rem);
+        margin-bottom: calc(40/16 * 1rem);
+    }
+
+    .header__order-container {
+        width: calc(342/16 * 1rem);
+    }
+
+    .header__image {
+        background-image: url(../assets/desktop/image-keyboard.jpg);
+        width: calc(540/16 * 1rem);
+        height: calc(480/16 * 1rem);
+        right: 11.5%;
+        border-radius: calc(24/16 * 1rem);
+    }
+
+    .header__image::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -53%;
+        width: calc(255/16 * 1rem);
+        height: calc(240/16 * 1rem);
+        background-color: var(--color-5);
+        border-radius: calc(24/16 * 1rem);
+    }
+
+    main {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .section-one {
+        width: calc(1110/16 * 1rem);
+        margin: 0 auto calc(168/16 * 1rem);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow: visible;
+    }
+
+    .section-one__image {
+        margin-bottom: 0;
+        width: calc(730/16 * 1rem);
+        justify-content: unset;
+        gap: calc(30/16 * 1rem);
+        margin-right: calc(125/16 * 1rem);
+    }
+
+    .section-one__image-one {
+        background-image: url(../assets/desktop/image-phone-and-keyboard.jpg);
+        width: calc(255/16 * 1rem);
+        height: calc(480/16 * 1rem);
+    }
+
+    .section-one__image-two {
+        background-image: url(../assets/desktop/image-glass-and-keyboard.jpg);
+        width: calc(445/16 * 1rem);
+        height: calc(480/16 * 1rem);
+    }
+
+    .section-one__image-two::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -39%;
+        width: calc(255/16 * 1rem);
+        height: calc(240/16 * 1rem);
+        background-color: var(--color-5);
+        border-radius: calc(24/16 * 1rem);
+    }
+
+    .section-one__text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: calc(225/16 * 1rem);
+        margin: 0;
+    }
+
+    .section-one__title {
+        margin-bottom: calc(27/16 * 1rem);
+    }
+
+    .section-one__description {
+        width: calc(255/16 * 1rem);
+    }
+
+    .section-two {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: unset;
+        width: calc(1110/16 * 1rem);
+        margin: 0 auto calc(128/16 * 1rem);
+        gap: calc(30/16 * 1rem);
+    }
+
+    .section-two__grid-one,
+    .section-two__grid-two,
+    .section-two__grid-three,
+    .section-two__grid-four {
+        width: calc(255/16 * 1rem);
+        margin: 0;
+    }
+
+    .grid-img {
+        margin-bottom: calc(48/16 * 1rem);
+    }
+
+    .nav__link:hover {
+        background-color: var(--color-3);
+        color: var(--color-6);
+        cursor: pointer;
+    }
+
+    .order__link:hover {
+        background-color: var(--color-2);
+        cursor: pointer;
     }
 }
